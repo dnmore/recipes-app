@@ -33,7 +33,7 @@ export default function Recipe({ loaderData }: Route.ComponentProps) {
     <div className="mt-12">
       <div className="mt-4   grid grid-cols-1 md:grid-cols-2 overflow-hidden">
         <div
-          className="h-96 bg-cover bg-center relative p-12 grid place-items-center"
+          className="h-96 bg-cover bg-center relative p-6 lg:p-12 grid place-items-center"
           style={{ backgroundImage: `url(${meal.strMealThumb})` }}
           role="img"
           aria-label={`Image of ${meal.strMeal}`}
@@ -41,7 +41,7 @@ export default function Recipe({ loaderData }: Route.ComponentProps) {
           <div className="absolute inset-0 bg-black bg-opacity-40"></div>
 
           <div className="py-2 px-6 flex flex-col justify-center items-center text-center relative z-10">
-            <h1 className="text-5xl font-bold font-serif tracking-tight text-white">
+            <h1 className="text-3xl font-bold font-serif tracking-tight text-white">
               {meal.strMeal}
             </h1>
             <div className="flex flex-wrap justify-center gap-1 mt-4 px-6 relative z-10">
