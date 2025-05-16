@@ -6,7 +6,7 @@ export default {
     extend: {
       fontFamily: {
         sans: [
-          '"Inter"',
+          '"Nunito Sans"',
           "ui-sans-serif",
           "system-ui",
           "sans-serif",
@@ -15,7 +15,24 @@ export default {
           '"Segoe UI Symbol"',
           '"Noto Color Emoji"',
         ],
+        serif: [
+          '"Playfair Display"',
+          "ui-serif",
+          "Georgia",
+          "Cambria",
+          '"Times New Roman"',
+          "Times",
+          "serif",
+        ],
       },
+      backgroundImage: {
+        hero: "url('/images/hero.webp')",
+        categories:"url('/images/categories.webp')",
+        ingredients:"url('/images/ingredients.webp')",
+        areas:"url('/images/areas.webp')",
+        
+      },
+    
     },
   },
   plugins: [],
