@@ -2,6 +2,17 @@ import type { Route } from "./+types/recipe";
 import { GiCarrot, GiChefToque } from "react-icons/gi";
 import Loader from "~/components/loader/loader";
 
+export function meta({ data }: Route.MetaArgs) {
+  const meal = data?.strMeal ?? "Recipe";
+  return [
+    { title: `MyDish | ${meal}` },
+    {
+      name: "description",
+      content: `Learn how to make ${meal} with step-by-step instructions and a complete ingredient list. Cook delicious homemade meals with ease!`,
+    },
+  ];
+}
+
 export async function clientLoader({ params }: Route.ClientLoaderArgs) {
   const res = await fetch(
     `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${params.id}`

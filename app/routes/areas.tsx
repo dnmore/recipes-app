@@ -4,6 +4,18 @@ import SearchArea from "~/components/search-area/search-area";
 import Loader from "~/components/loader/loader";
 import RecipesGrid from "~/components/recipes-grid/recipes-grid";
 
+
+export function meta({ location }: Route.MetaArgs) {
+  const area = new URLSearchParams(location.search).get("area") ?? "Global";
+  return [
+    { title: `MyDish | ${area} Recipes` },
+    {
+      name: "description",
+      content: `Discover authentic ${area} recipes and dishes from around the world. Browse flavorful regional cuisines and cook something new today.`,
+    },
+  ];
+}
+
 export async function clientLoader({ request }: Route.ClientLoaderArgs) {
   const url = new URL(request.url);
   const area = url.searchParams.get("area");

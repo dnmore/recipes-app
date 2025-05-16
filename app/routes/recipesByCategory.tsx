@@ -3,6 +3,18 @@ import type { Route } from "./+types/recipesByCategory";
 import Loader from "~/components/loader/loader";
 import RecipesGrid from "~/components/recipes-grid/recipes-grid";
 
+export function meta({ params }: Route.MetaArgs) {
+  const category = params.category ?? "Category";
+  return [
+    { title: `MyDish | ${category} Recipes` },
+    {
+      name: "description",
+      content: `Browse a variety of delicious ${category} recipes. Discover new flavors and cook your favorite meals from the ${category} category.`,
+    },
+  ];
+}
+
+
 export async function clientLoader({ params }: Route.ClientLoaderArgs) {
   const res = await fetch(
     `https://www.themealdb.com/api/json/v1/1/filter.php?c=${params.category}`

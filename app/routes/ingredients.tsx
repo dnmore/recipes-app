@@ -1,8 +1,20 @@
 import type { Route } from "./+types/ingredients";
-import { useSearchParams, NavLink } from "react-router";
+import { useSearchParams } from "react-router";
 import SearchIngredient from "~/components/search-ingredient/search-ingredient";
 import Loader from "~/components/loader/loader";
 import RecipesGrid from "~/components/recipes-grid/recipes-grid";
+
+
+export function meta({ location }: Route.MetaArgs) {
+  const ingredient = new URLSearchParams(location.search).get("ingredient") ?? "Ingredient";
+  return [
+    { title: `MyDish | Recipes with ${ingredient}` },
+    {
+      name: "description",
+      content: `Find delicious recipes that use ${ingredient} as a main ingredient. Cook creative and tasty meals with ingredients you already have.`,
+    },
+  ];
+}
 
 export async function clientLoader({ request }: Route.ClientLoaderArgs) {
   const url = new URL(request.url);

@@ -1,7 +1,14 @@
+import type { Route } from "./+types/categories";
 import { useLoaderData } from "react-router";
 import { NavLink } from "react-router";
 import Loader from "~/components/loader/loader";
 
+export function meta({}: Route.MetaArgs) {
+  return [
+    { title: "MyDish | Recipes By Category" },
+    { name: "description", content: "Browse a variety of delicious recipes organized by category. Find your next favorite meal from appetizers to desserts on MyDish." },
+  ];
+}
 
 export const loader = async () => {
   const res = await fetch(
@@ -45,7 +52,7 @@ export default function Categories() {
             key={category.idCategory}
             className="group relative mx-auto flex flex-col justify-center items-center"
           >
-            <div className="rounded-full overflow-hidden w-40 h-40">
+            <div className="rounded-full overflow-hidden w-40 h-40 border border-gray-600 shadow-xl">
               <img
                 src={category.strCategoryThumb}
                 alt={`Category: ${category.strCategory}`}

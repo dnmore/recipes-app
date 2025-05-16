@@ -10,6 +10,7 @@ export function NavDesktop() {
       >
         <h3 className="sr-only">Homepage</h3>
         <span>mydish</span>
+        <GiMeal />
       </NavLink>
 
       <div className="flex items-center gap-10 text-sm uppercase font-bold">
