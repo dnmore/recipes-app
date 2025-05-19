@@ -32,7 +32,7 @@ export function NavMobile() {
             <NavLink
               to="/categories"
               className={({ isActive }) =>
-                `hover:text-orange-500 ${isActive ? "text-orange-500" : ""}`
+                `hover:text-orange-700 ${isActive ? "text-orange-700" : ""}`
               }
               aria-current="page"
             >
@@ -41,7 +41,7 @@ export function NavMobile() {
             <NavLink
               to="/ingredients"
               className={({ isActive }) =>
-                `hover:text-orange-500 ${isActive ? "text-orange-500" : ""}`
+                `hover:text-orange-700 ${isActive ? "text-orange-700" : ""}`
               }
               aria-current="page"
             >
@@ -50,7 +50,7 @@ export function NavMobile() {
             <NavLink
               to="/areas"
               className={({ isActive }) =>
-                `hover:text-orange-500 ${isActive ? "text-orange-500" : ""}`
+                `hover:text-orange-700 ${isActive ? "text-orange-700" : ""}`
               }
               aria-current="page"
             >

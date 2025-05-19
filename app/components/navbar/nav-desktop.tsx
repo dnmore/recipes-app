@@ -17,7 +17,7 @@ export function NavDesktop() {
         <NavLink
           to="/categories"
           className={({ isActive }) =>
-            `hover:text-orange-500 ${isActive ? "text-orange-500" : ""}`
+            `hover:text-orange-700 ${isActive ? "text-orange-700" : ""}`
           }
           aria-current="page"
         >
@@ -26,7 +26,7 @@ export function NavDesktop() {
         <NavLink
           to="/ingredients"
           className={({ isActive }) =>
-            `hover:text-orange-500 ${isActive ? "text-orange-500" : ""}`
+            `hover:text-orange-700 ${isActive ? "text-orange-700" : ""}`
           }
           aria-current="page"
         >
@@ -35,7 +35,7 @@ export function NavDesktop() {
         <NavLink
           to="/areas"
           className={({ isActive }) =>
-            `hover:text-orange-500 ${isActive ? "text-orange-500" : ""}`
+            `hover:text-orange-700 ${isActive ? "text-orange-700" : ""}`
           }
           aria-current="page"
         >
