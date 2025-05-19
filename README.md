@@ -1,9 +1,23 @@
-# React Router Netlify Template
+# 🍽️ MyDish2.0. - Recipe Web Application
+
+Refactored version of previous [project](https://github.com/dnmore/my-dish)
+
+- 🚀 React application using React Router
+- ⚡️ Improved Performance, Accessibility, SEO
+- 🎉 Cleaner and engaging user experience with a new layout
+
+## Overview
+
+MyDish is a modern, user-friendly web application that allows food enthusiasts to explore, discover, and filter recipes based on categories, main ingredient, and areas. Powered by the MealDB API, MyDish provides a seamless experience with intuitive navigation and detailed recipe pages.
+
+Check out the [Live Demo](https://my-dish-recipes.netlify.app/) and discover delicious recipes in few clicks!
+
+### React Router Netlify Template
 
 A modern, production-ready template for building full-stack React applications using React Router,
 deployed to Netlify.
 
-## Features
+### Features
 
 - 🚀 Server-side rendering
 - ⚡️ Hot Module Replacement (HMR)
