@@ -28,11 +28,11 @@ export function NavMobile() {
       </div>
       {isOpen && (
         <div className="p-5 pt-0 z-50 bg-white uppercase font-bold">
-          <div className="flex flex-col justify-center items-center gap-4 ">
+          <div className="flex flex-col justify-center items-center text-base gap-4 ">
             <NavLink
               to="/categories"
               className={({ isActive }) =>
-                `hover:text-orange-700 ${isActive ? "text-orange-700" : ""}`
+                `hover:text-orange-800 ${isActive ? "text-orange-800" : ""}`
               }
               aria-current="page"
             >
@@ -41,7 +41,7 @@ export function NavMobile() {
             <NavLink
               to="/ingredients"
               className={({ isActive }) =>
-                `hover:text-orange-700 ${isActive ? "text-orange-700" : ""}`
+                `hover:text-orange-800 ${isActive ? "text-orange-800" : ""}`
               }
               aria-current="page"
             >
@@ -50,7 +50,7 @@ export function NavMobile() {
             <NavLink
               to="/areas"
               className={({ isActive }) =>
-                `hover:text-orange-700 ${isActive ? "text-orange-700" : ""}`
+                `hover:text-orange-800 ${isActive ? "text-orange-800" : ""}`
               }
               aria-current="page"
             >

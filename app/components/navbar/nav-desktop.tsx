@@ -13,11 +13,11 @@ export function NavDesktop() {
         <GiMeal />
       </NavLink>
 
-      <div className="flex items-center gap-10 text-sm uppercase font-bold">
+      <div className="flex items-center gap-10 text-base uppercase font-bold">
         <NavLink
           to="/categories"
           className={({ isActive }) =>
-            `hover:text-orange-700 ${isActive ? "text-orange-700" : ""}`
+            `hover:text-orange-800 ${isActive ? "text-orange-800" : ""}`
           }
           aria-current="page"
         >
@@ -26,7 +26,7 @@ export function NavDesktop() {
         <NavLink
           to="/ingredients"
           className={({ isActive }) =>
-            `hover:text-orange-700 ${isActive ? "text-orange-700" : ""}`
+            `hover:text-orange-800 ${isActive ? "text-orange-800" : ""}`
           }
           aria-current="page"
         >
@@ -35,7 +35,7 @@ export function NavDesktop() {
         <NavLink
           to="/areas"
           className={({ isActive }) =>
-            `hover:text-orange-700 ${isActive ? "text-orange-700" : ""}`
+            `hover:text-orange-800 ${isActive ? "text-orange-800" : ""}`
           }
           aria-current="page"
         >
