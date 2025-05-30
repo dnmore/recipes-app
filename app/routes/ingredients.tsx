@@ -63,7 +63,7 @@ export default function Ingredients({ loaderData }: Route.ComponentProps) {
       </div>
 
       {ingredient && (
-        <h2 className="text-6xl font-serif font-bold uppercase mt-6 text-center">
+        <h2 className="text-3xl font-serif font-bold uppercase mt-6 text-center">
           {ingredient}
         </h2>
       )}

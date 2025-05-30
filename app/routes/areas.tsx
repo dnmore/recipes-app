@@ -64,7 +64,7 @@ export default function Areas({ loaderData }: Route.ComponentProps) {
       </div>
       {area && (
         <h2
-          className="text-6xl font-serif font-bold uppercase mt-6 text-center"
+          className="text-3xl font-serif font-bold uppercase mt-6 text-center"
           aria-live="polite"
         >
           {area}
