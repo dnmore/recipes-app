@@ -45,7 +45,7 @@ export default function RecipesByCategory({
       <div className="h-64 grid place-items-center text-center relative p-12 bg-categories bg-cover bg-no-repeat bg-center">
         <div className="absolute inset-0 bg-black bg-opacity-80"></div>
         <header role="banner" className="text-white relative z-10">
-          <h2 className="text-6xl font-serif font-bold uppercase">
+          <h2 className="text-3xl font-serif font-bold uppercase">
             {category}
           </h2>
         </header>
