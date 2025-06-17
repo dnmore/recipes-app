@@ -1,9 +1,10 @@
-import type { Route } from "./+types/recipe";
+import type { Route } from "../+types/recipe";
 import { GiCarrot, GiChefToque } from "react-icons/gi";
 import Loader from "~/components/loader/loader";
 
 export function meta({ data }: Route.MetaArgs) {
-  const meal = data?.strMeal ?? "Recipe";
+  const meal = (data as { strMeal?: string } | undefined)?.strMeal ?? "Recipe";
+  
   return [
     { title: `MyDish | ${meal}` },
     {
@@ -37,7 +38,7 @@ const getIngredients = (meal: Record<string, string>) => {
 };
 
 export default function Recipe({ loaderData }: Route.ComponentProps) {
-  const meal = loaderData as Record<string, string>;
+  const meal = (loaderData ?? {}) as Record<string, string>;
   const ingredients = getIngredients(meal);
 
   return (

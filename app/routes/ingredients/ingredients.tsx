@@ -1,4 +1,4 @@
-import type { Route } from "./+types/ingredients";
+import type { Route } from "../+types/ingredients";
 import { useSearchParams } from "react-router";
 import SearchIngredient from "~/components/search-ingredient/search-ingredient";
 import Loader from "~/components/loader/loader";

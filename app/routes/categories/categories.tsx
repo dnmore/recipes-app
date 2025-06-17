@@ -1,12 +1,16 @@
-import type { Route } from "./+types/categories";
-import { useLoaderData } from "react-router";
+import type { Route } from "../+types/categories";
+
 import { NavLink } from "react-router";
-import Loader from "~/components/loader/loader";
+import Loader from "../../components/loader/loader";
 
 export function meta({}: Route.MetaArgs) {
   return [
     { title: "MyDish | Recipes By Category" },
-    { name: "description", content: "Browse a variety of delicious recipes organized by category. Find your next favorite meal from appetizers to desserts on MyDish." },
+    {
+      name: "description",
+      content:
+        "Browse a variety of delicious recipes organized by category. Find your next favorite meal from appetizers to desserts on MyDish.",
+    },
   ];
 }
 
@@ -22,8 +26,18 @@ export function HydrateFallback() {
   return <Loader />;
 }
 
-export default function Categories() {
-  const categories = useLoaderData() as Array<{
+type Category = {
+  idCategory: string;
+  strCategory: string;
+  strCategoryThumb: string;
+};
+
+type CategoriesProps = {
+  loaderData: Category[];
+};
+
+export default function Categories({ loaderData }: CategoriesProps) {
+  const categories = loaderData as Array<{
     idCategory: string;
     strCategory: string;
     strCategoryThumb: string;
@@ -40,8 +54,9 @@ export default function Categories() {
           <p className="mt-4 text-base px-4">
             Explore the delicious world of food, one category at a time! Whether
             you're craving something sweet, savory, or a bit of both, we've got
-            you covered.<br/> Click through and find your next favorite dish—it’s
-            like opening a cookbook you never knew you had.
+            you covered.
+            <br /> Click through and find your next favorite dish—it’s like
+            opening a cookbook you never knew you had.
           </p>
         </div>
       </div>

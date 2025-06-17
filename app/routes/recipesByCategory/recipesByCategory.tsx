@@ -1,5 +1,5 @@
 import { useParams } from "react-router";
-import type { Route } from "./+types/recipesByCategory";
+import type { Route } from "../+types/recipesByCategory";
 import Loader from "~/components/loader/loader";
 import RecipesGrid from "~/components/recipes-grid/recipes-grid";
 

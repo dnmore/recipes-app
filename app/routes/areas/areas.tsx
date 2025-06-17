@@ -1,4 +1,4 @@
-import type { Route } from "./+types/areas";
+import type { Route } from "../+types/areas";
 import { useSearchParams } from "react-router";
 import SearchArea from "~/components/search-area/search-area";
 import Loader from "~/components/loader/loader";
