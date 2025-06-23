@@ -1,88 +1,90 @@
 # 🍽️ MyDish2.0. - Recipe Web Application
 
-Refactored version of previous [project](https://github.com/dnmore/my-dish)
+**MyDish2.0** is a modern, responsive web application that allows users to explore global recipes by filtering through categories, main ingredient, or geographical areas. It offers an improved, cleaner interface and significantly better performance, accessibility, and SEO than its original version.
 
-- 🚀 React application using React Router
-- ⚡️ Improved Performance, Accessibility, SEO
-- 🎉 Cleaner and engaging user experience with a new layout
+## 🔄 Background
 
-## Overview
+**MyDish2.0** is a complete refactor of the original **MyDish** app, rebuilt with performance, user experience, and maintainability in mind.
 
-MyDish is a modern, user-friendly web application that allows food enthusiasts to explore, discover, and filter recipes based on categories, main ingredient, and areas. Powered by the MealDB API, MyDish provides a seamless experience with intuitive navigation and detailed recipe pages.
+### ✨ Key Improvements Over Previous Version
 
-Check out the [Live Demo](https://my-dish-recipes.netlify.app/) and discover delicious recipes in few clicks!
+- 🚀 Migrated from **Create React App** to a modern React environment with **React Router** and optimized bundling.
+- ⚡️ Improved **Lighthouse scores** across the board — especially in **Accessibility** and **SEO**.
+- 🎉 Redesigned the layout with **TailwindCSS** for a cleaner and more engaging UI.
+- 🧼 Refactored architecture for scalability and modular component structure.
 
-### React Router Netlify Template
+## 🌟 Features
 
-A modern, production-ready template for building full-stack React applications using React Router,
-deployed to Netlify.
+- **Filter by Recipe Categories**  
+  Easily browse meals by type like Seafood, Vegetarian, or Desserts.
 
-### Features
+- **Detailed Recipe View**  
+  View ingredients, instructions, and media for each recipe.
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
-- 💻 Configured for deployment to Netlify
+- **Filter by Main Ingredient**  
+  Search for dishes using a specific key ingredient (e.g. rice).
 
-## Getting Started
+- **Explore by Geographical Area**  
+  Filter and explore traditional recipes from around the world by geographical area.
 
-### Installation
+- **Load More Functionality**  
+  Browse large recipe collections with a smooth "Load More" button.
 
-Install the dependencies:
+- **Custom Loader**  
+  Lightweight loader for seamless data fetching experience.
 
-```bash
-npm install
-```
+- **Mobile-Responsive Design**  
+  Built with TailwindCSS for fully responsive layout.
 
-### Development
+## 🛠 Tech Stack
 
-Start the development server with HMR:
+- **React** application using **React Router** with **TypeScript** 
+- **TailwindCSS** 
+- **MealDB API** 
+- **Hamburger-React** 
+- **React-Icons** 
+- **Netlify** 
+- **Jest + React Testing Library**
 
-```bash
-npm run dev
-```
+## 🚀 Deployment
 
-Your application will be available at `http://localhost:5173`.
+- 🔗 [MyDish2.0 Live Site](https://my-dish-recipes.netlify.app/)
+- 🕹️ [Original MyDish (v1)](https://mydish-recipe-finder.netlify.app/)
 
-## Building for Production
+## 📦 Getting Started
 
-Create a production build:
+To run this project locally:
 
-```bash
-npm run build
-```
+1. Clone the repository:
 
-## Previewing a Production build
+   ```bash
+   git clone https://github.com/dnmore/my-dish2.0.git
+   cd mydish2.0
+   ```
 
-To preview a production build locally, use the [Netlify CLI](https://cli.netlify.com):
+2. Install dependencies:
 
-```bash
-npx netlify-cli serve
-```
+   ```bash
+   npm install
+   ```
 
-```bash
-npm run build
-```
+3. Start the development server:
 
-## Deployment
+   ```bash
+   npm run dev
+   ```
 
-This template is preconfigured for deployment to Netlify.
+4. Your application will be available at `http://localhost:5173`.
 
-Follow <https://docs.netlify.com/welcome/add-new-site/> to add this project as a site
-in your Netlify account.
+## 🤝 Contributing
 
-## Styling
+Contributions and feedback are welcome!
+Fork the repository and submit a pull request with your ideas, improvements, or bug fixes.
 
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
+📄 License
 
-## See also
-
-[Guide: how to deploy a React Router 7 site to Netlify](https://developers.netlify.com/guides/how-to-deploy-a-react-router-7-site-to-netlify/)
+This project is licensed under the MIT License.
 
 ---
 
-Built with ❤️ using React Router.
+Built with ❤️ using React Router, TypeScript, and the MealDB API.
