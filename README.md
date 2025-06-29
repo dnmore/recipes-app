@@ -1,17 +1,8 @@
-# 🍽️ MyDish2.0. - Recipe Web Application
+# 🍽️ MyDish - Recipe Web Application
 
-**MyDish2.0** is a modern, responsive web application that allows users to explore global recipes by filtering through categories, main ingredient, or geographical areas. It offers an improved, cleaner interface and significantly better performance, accessibility, and SEO than its original version.
+**MyDish2.0** is a modern, responsive web application that allows users to explore global recipes by filtering through categories, main ingredient, or geographical areas. 
 
-## 🔄 Background
-
-**MyDish2.0** is a complete refactor of the original **MyDish** app, rebuilt with performance, user experience, and maintainability in mind.
-
-### ✨ Key Improvements Over Previous Version
-
-- 🚀 Migrated from **Create React App** to a modern React environment with **React Router** and optimized bundling.
-- ⚡️ Improved **Lighthouse scores** across the board — especially in **Accessibility** and **SEO**.
-- 🎉 Redesigned the layout with **TailwindCSS** for a cleaner and more engaging UI.
-- 🧼 Refactored architecture for scalability and modular component structure.
+🔗 [View Live Site](https://my-dish-recipes.netlify.app/)
 
 ## 🌟 Features
 
@@ -46,10 +37,6 @@
 - **Netlify** 
 - **Jest + React Testing Library**
 
-## 🚀 Deployment
-
-- 🔗 [MyDish2.0 Live Site](https://my-dish-recipes.netlify.app/)
-- 🕹️ [Original MyDish (v1)](https://mydish-recipe-finder.netlify.app/)
 
 ## 📦 Getting Started
 
@@ -58,8 +45,8 @@ To run this project locally:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/dnmore/my-dish2.0.git
-   cd mydish2.0
+   git clone https://github.com/dnmore/recipes-app.git
+   
    ```
 
 2. Install dependencies:
