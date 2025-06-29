@@ -1,6 +1,6 @@
 # 🍽️ MyDish - Recipe Web Application
 
-**MyDish2.0** is a modern, responsive web application that allows users to explore global recipes by filtering through categories, main ingredient, or geographical areas. 
+**MyDish** is a modern, responsive web application that allows users to explore global recipes by filtering through categories, main ingredient, or geographical areas. 
 
 🔗 [View Live Site](https://my-dish-recipes.netlify.app/)
 
