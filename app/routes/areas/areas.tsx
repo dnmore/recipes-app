@@ -45,7 +45,7 @@ export default function Areas({ loaderData }: Route.ComponentProps) {
   const area = searchParams.get("area");
 
   return (
-    <div className="mt-12">
+    <div className="mt-12 min-h-screen">
       <div className="h-96 lg:h-64 grid place-items-center text-center relative p-6 lg:py-12 lg:px-24 bg-areas bg-cover bg-no-repeat bg-center">
         <div className="absolute inset-0 bg-black bg-opacity-80"></div>
         <div className="text-white relative z-10">

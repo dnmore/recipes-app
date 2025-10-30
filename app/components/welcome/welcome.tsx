@@ -1,7 +1,7 @@
 import { NavLink } from "react-router";
 export function Welcome() {
   return (
-    <main className="flex items-center justify-center p-8 z-10">
+    <div className="flex items-center justify-center p-8 z-10">
       <div className="flex-1 flex flex-col items-center gap-5 min-h-[450px] p-6 bg-hero bg-cover bg-no-repeat bg-center rounded-sm shadow-lg">
         <header className="flex flex-col items-center gap-2 p-6 text-center ">
           <h1 className="font-serif text-2xl md:text-4xl font-bold tracking-tight">
@@ -16,6 +16,6 @@ export function Welcome() {
           Get Started
         </NavLink>
       </div>
-    </main>
+    </div>
   );
 }

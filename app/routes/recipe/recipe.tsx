@@ -1,4 +1,4 @@
-import type { Route } from "../+types/recipe";
+import type { Route } from "./+types/recipe";
 import { GiCarrot, GiChefToque } from "react-icons/gi";
 import Loader from "~/components/loader/loader";
 

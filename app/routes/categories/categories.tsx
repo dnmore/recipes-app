@@ -1,4 +1,5 @@
-import type { Route } from "../+types/categories";
+import type { Route } from "./+types/categories";
+
 
 import { NavLink } from "react-router";
 import Loader from "../../components/loader/loader";
@@ -44,7 +45,7 @@ export default function Categories({ loaderData }: CategoriesProps) {
   }>;
 
   return (
-    <main className="mt-12">
+    <div className="mt-12">
       <div className="h-96 lg:h-64 grid place-items-center text-center relative p-6 lg:py-12 lg:px-24 bg-categories bg-cover bg-no-repeat bg-center">
         <div className="absolute inset-0 bg-black bg-opacity-80"></div>
         <div className="text-white relative z-10">
@@ -85,6 +86,6 @@ export default function Categories({ loaderData }: CategoriesProps) {
           </div>
         ))}
       </div>
-    </main>
+    </div>
   );
 }

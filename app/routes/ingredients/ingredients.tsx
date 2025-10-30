@@ -1,4 +1,4 @@
-import type { Route } from "../+types/ingredients";
+import type { Route } from "./+types/ingredients";
 import { useSearchParams } from "react-router";
 import SearchIngredient from "~/components/search-ingredient/search-ingredient";
 import Loader from "~/components/loader/loader";
@@ -45,7 +45,7 @@ export default function Ingredients({ loaderData }: Route.ComponentProps) {
   const ingredient = searchParams.get("ingredient");
 
   return (
-    <main className="mt-12">
+    <div className="mt-12 min-h-screen">
       <div className="h-96 lg:h-64 grid place-items-center text-center relative p-6 lg:py-12 lg:px-24 bg-ingredients bg-cover bg-no-repeat bg-center">
         <div className="absolute inset-0 bg-black bg-opacity-80"></div>
         <div className="text-white relative z-10">
@@ -71,6 +71,6 @@ export default function Ingredients({ loaderData }: Route.ComponentProps) {
         <p className="text-center my-4" role="status" aria-live="polite">No recipes found.</p>
       )}
       <RecipesGrid meals={meals} />
-    </main>
+    </div>
   );
 }
